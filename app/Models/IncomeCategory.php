@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class IncomeCategory extends Model
+{
+    protected $fillable = [
+        'name',
+    ];
+
+    protected $table = 'income_categories';
+
+    public $timestamps = false;
+}
