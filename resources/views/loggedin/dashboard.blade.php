@@ -36,6 +36,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ route("loggedin.exchange") }}">
+              <span data-feather="dollar-sign"></span>
+              Currency Converter
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="bar-chart-2"></span>
               Reports
@@ -96,8 +102,10 @@
         <h1 class="h2">Dashboard</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-secondary me-2">Current Exchange Rate: 1 USD = {{ $eurRate }} EUR</button>
-            <a class="btn btn-sm btn-outline-secondary" href="{{ route("transactions.export") }}">Export</a>
+            <span class="badge rounded-pill bg-success bg-opacity-10 text-success border border-success border-opacity-30 px-3 py-2 me-3">
+              <i class="bi bi-currency-exchange me-1"></i> 1 USD = {{ $eurRate }} EUR
+          </span>            
+          <a class="btn btn-sm btn-outline-secondary rounded-1" href="{{ route("transactions.export") }}">Export Transactions</a>
           </div>
           <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
             <span data-feather="calendar"></span>

@@ -65,15 +65,15 @@ class DashboardController extends Controller
     private function fetchExchangeRate()
     {
         return Cache::remember('usd_to_eur', 3600, function() {
-        $apiKey = env('EXCHANGE_RATE_API_KEY');
+            $apiKey = env('EXCHANGE_RATE_API_KEY');
 
-        $response = Http::get("https://v6.exchangerate-api.com/v6/{$apiKey}/latest/USD");
+            $response = Http::get("https://v6.exchangerate-api.com/v6/{$apiKey}/latest/USD");
 
-        if ($response->successful()){
-            return $response->json()["conversion_rates"]["EUR"];
-        } else{
-            return "N/A";
-        }
-    });
-    }
+            if ($response->successful()){
+                return $response->json()["conversion_rates"]["EUR"];
+            } else{
+                return "N/A";
+            }
+        });
+    }   
 }

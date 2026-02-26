@@ -6,6 +6,7 @@ use App\Exports\TransactionsExport;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BudgetController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ExchangeController;
 use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\IncomeController;
 use App\Http\Controllers\NewsletterController;
@@ -105,6 +106,10 @@ Route::middleware(AuthMiddleware::class)->group(function () {
     Route::delete("/budget/delete/{id}", [BudgetController::class,"destroy"])->name("budget.destroy");
 
     Route::put("/budget/edit/{id}", [BudgetController::class,"update"])->name("budget.update");
+
+    // Exchange rate Calculator
+    Route::get("/exchange", [ExchangeController::class,"index"])->name("loggedin.exchange");
+    Route::post("/exchange", [ExchangeController::class,"calculate"])->name("exchange.calculate");
 
     Route::get("/subscribe", function(){
         return view("loggedin.subscribe");
