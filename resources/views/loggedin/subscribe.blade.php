@@ -15,7 +15,7 @@ Financial Advice
 </style>
 <div class="d-flex justify-content-center vh-100 pt-5" style="background-color: #C0C0C0" >
     <div class="col-md-6 mt-5">
-        <div class="card shadow-lg">
+        <div class="card shadow-lg border-0">
             <div class="card-header text-center" style="background-color: #A0A0A0">
                 <h3>Get Financial Advice</h3>
             </div>
