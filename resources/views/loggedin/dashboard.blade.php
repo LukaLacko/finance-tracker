@@ -81,9 +81,9 @@
             </a>
              --}}
         </ul>
-        <ul class="nav flex-column mt-auto pb-3" style="background-color: Gainsboro">
+        <ul class="nav flex-column mt-auto pb-3" style="background-color: #008080;">
           <li class="nav-item border-top pt-2">
-            <a class="nav-link text-center fw-bold" href="/subscribe">
+            <a class="nav-link text-center fw-bold text-white" href="/subscribe">
               Get Financial Advice
             </a>
           </li>

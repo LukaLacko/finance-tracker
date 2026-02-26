@@ -11,6 +11,7 @@ use App\Models\IncomeCategory;
 use App\Models\ExpenseCategory;
 use Maatwebsite\Excel\Concerns\ToArray;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Cache;
 
 class DashboardController extends Controller
 {
@@ -63,6 +64,7 @@ class DashboardController extends Controller
 
     private function fetchExchangeRate()
     {
+        return Cache::remember('usd_to_eur', 3600, function() {
         $apiKey = env('EXCHANGE_RATE_API_KEY');
 
         $response = Http::get("https://v6.exchangerate-api.com/v6/{$apiKey}/latest/USD");
@@ -72,5 +74,6 @@ class DashboardController extends Controller
         } else{
             return "N/A";
         }
+    });
     }
 }
