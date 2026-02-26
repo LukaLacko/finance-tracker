@@ -89,7 +89,7 @@
         <p>Your financial data stays private and secure, always.</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="{{ asset("img/sajj.jpg") }}" class="bd-placeholder-img rounded-circle" width="140" height="140">
+        <img src="{{ asset("img/calculator.jpg") }}" class="bd-placeholder-img rounded-circle" width="140" height="140">
 
         <h2>Visual Reports & Charts</h2>
         <p>See your spending trends with clear charts monthly totals, category breakdowns, and comparisons over time.</p>
@@ -152,7 +152,7 @@
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
+    <p class="float-end"><a href="#" class="btn btn-outline-secondary">Back to top</a></p>
     <p>&copy; 2020–2026 Lacks, Inc. &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></p>
   </footer>
   @endsection

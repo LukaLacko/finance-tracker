@@ -3,11 +3,22 @@
 @section('content')
 <link href="{{ asset('css/signin.css') }}" rel="stylesheet">
 
+<style>
+    .form-signin{
+        width: 100%;
+        max-width: 600px; /* Povećaj sa 330px na 450px */
+        padding: 15px;
+        margin: auto;
+    }
+</style>
+
 <div class="signin-wrapper">
     <main class="form-signin text-center">
         <form method="post">
           @csrf
-            <img class="mb-4" src="{{ asset('img/404-Hlbfm6J7VR8-unsplash.jpg') }}" alt="" width="72" height="57">
+          <div class="card shadow-lg rounded-4">
+            <div class="card-body">
+                <img class="" src="{{ asset('img/Expense-tracker logo.png') }}" alt="Logo" style="width: 150px; height: auto;">
             <h1 class="h3 mb-3 fw-normal">Please register</h1>
 
             <div class="form-floating mb-2">
@@ -26,6 +37,9 @@
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
             <p>Already have an account? <a href="{{ route("login") }}">Log in</a></p>
             <p class="mt-5 mb-3 text-muted">&copy; 2026</p>
+            </div>
+          </div>
+            
         </form>
     </main>
 </div>

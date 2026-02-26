@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-5">
-    <div>
+    <div class="mt-2">
         <h2 class="fw-bold mb-0">My Budgets</h2>
         <p class="text-muted mb-0">Track your monthly spending limits</p>
     </div>

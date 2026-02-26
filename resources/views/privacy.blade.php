@@ -5,7 +5,7 @@
 @section('content')
 <div class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-lg-9 bg-white p-5 shadow-sm rounded">
+        <div class="col-lg-9 bg-white p-5 shadow-lg rounded">
             <h1 class="display-5 fw-bold mb-4">Privacy Policy</h1>
             <p class="text-muted">Last updated: {{ date('F d, Y') }}</p>
             
@@ -60,7 +60,7 @@
                     <strong>Location:</strong> Belgrade, Serbia
                 </p>
             </section>
-
+                        
             <div class="mt-5 text-center">
                 <a href="{{ route('homepage') }}" class="btn btn-outline-secondary">Return to Home</a>
             </div>
