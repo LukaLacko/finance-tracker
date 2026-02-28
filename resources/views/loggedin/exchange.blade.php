@@ -80,7 +80,7 @@
                             <small class="text-primary text-uppercase fw-bold d-block mb-1">Result</small>
                             <h2 class="fw-bold text-primary mb-0">
                                 {{ session('amount') }} {{ session('from') }} 
-                                <i class="bi bi-arrow-right mx-2 small"></i>
+                                =
                                 {{ session('result') }} {{ session('to') }}
                             </h2>
                         </div>

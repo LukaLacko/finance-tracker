@@ -44,32 +44,33 @@
     <h1>Income:</h1>
     <a class="btn btn-primary btn-lg align-self-center" href="{{ route("income.create") }}">Add Income</a>
 </div>
-
-<table class="table table-hover table-striped border">
-    <thead>
-        <th>Title</th>
-        <th>Category</th>
-        <th>Amount</th>
-        <th>Created at</th>
-        <th>Details</th>
-        <th>Edit</th>
-        <th>Delete</th>
-    </thead>
-    <tbody>
-        @foreach($userIncomes as $income)
-        <tr>
-            <td>{{ $income->title }}</td>
-            <td>{{ $income->category->name}}</td>
-            <td class="fw-bold">${{ $income->amount }}</td>
-            <td>{{ $income->created_at->format('d.m.Y') }}</td>
-            
-            <td><a href="{{ route("income.details", $income->id) }}">Details</a></td>
-            <td><a href="{{ route("income.edit", $income->id) }}" class="btn btn-secondary">Edit</a></td>
-            <td><a href="{{ route("income.delete", $income->id) }}" class="btn btn-danger">Delete</a></td>
-        </tr>
-        @endforeach
-    </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table table-hover table-striped border">
+        <thead>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Created at</th>
+            <th>Details</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </thead>
+        <tbody>
+            @foreach($userIncomes as $income)
+            <tr>
+                <td>{{ $income->title }}</td>
+                <td>{{ $income->category->name}}</td>
+                <td class="fw-bold">${{ $income->amount }}</td>
+                <td>{{ $income->created_at->format('d.m.Y') }}</td>
+                
+                <td><a href="{{ route("income.details", $income->id) }}">Details</a></td>
+                <td><a href="{{ route("income.edit", $income->id) }}" class="btn btn-secondary">Edit</a></td>
+                <td><a href="{{ route("income.delete", $income->id) }}" class="btn btn-danger">Delete</a></td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
 <div class="paggination-wrapper">
     {{ $userIncomes->links() }}
 </div>

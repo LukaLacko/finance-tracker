@@ -6,10 +6,10 @@
 
 @section("content")
 
-<div class="container">
-    <div class="col-md-16">
-        <div class="card mt-4">
-            <div class="card-header">
+<div class="container d-flex justify-content-center">
+    <div class="col-md-8">
+        <div class="card mt-4 rounded-4">
+            <div class="card-header bg-primary text-white">
                 <h4 class="text-center">Add Income</h4>
             </div>
             <div class="card-body">

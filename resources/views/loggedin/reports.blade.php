@@ -10,7 +10,7 @@
         </div>
         <div class="d-flex justify-content-between w-100">
             <h2 class="fw-bold mb-0">Financial Insights</h2>
-            <a href="{{ route("loggedin.dashboard") }}" class="btn btn-outline-primary">Dashboard</a>
+            <a href="{{ route("loggedin.dashboard") }}" class="btn btn-outline-primary rounded-4">Dashboard</a>
         </div>
     </div>
 
