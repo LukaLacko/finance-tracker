@@ -59,7 +59,7 @@
             </section>
 
             <div class="mt-5 text-center">
-                <a href="{{ route('homepage') }}" class="btn btn-outline-secondary">Return to Home</a>
+                <a href="{{ route('homepage') }}" class="btn btn-outline-secondary">Return Home</a>
             </div>
         </div>
     </div>
