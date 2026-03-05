@@ -63,7 +63,7 @@
         <div class="col-md-6">
             <div class="card border-0 shadow-sm rounded-4 h-100">
                 <div class="card-header bg-white border-0 pt-4 px-4">
-                    <h5 class="fw-bold text-dark mb-0">Top 5 Expenses This Month</h5>
+                    <h5 class="fw-bold text-dark mb-0">Top Expenses This Month</h5>
                 </div>
                 <div class="card-body px-4 pb-4">
                     <div class="table-responsive">
