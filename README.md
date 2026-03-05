@@ -41,4 +41,4 @@ I built this app in a few weeks to practice Laravel. It helps users track their 
 <img width="1702" height="896" alt="Screenshot 2026-03-03 at 22 14 32" src="https://github.com/user-attachments/assets/3b6fae95-8f6e-4a4f-8a8a-f6a0b92aec0c" />
 <img width="1693" height="896" alt="Screenshot 2026-03-03 at 22 14 53" src="https://github.com/user-attachments/assets/04916c95-6f15-41f2-bc2e-7ca7c4188e51" />
 <img width="1697" height="894" alt="Screenshot 2026-03-03 at 22 15 04" src="https://github.com/user-attachments/assets/ed2b3ce3-9555-4525-872b-fda758a8ee8d" />
-<img width="1695" height="886" alt="Screenshot 2026-03-03 at 22 15 16" src="https://github.com/user-attachments/assets/b9857c3c-f9a1-4da0-80a8-aa708999b16c" />
+<img width="1700" height="892" alt="Screenshot 2026-03-05 at 17 34 58" src="https://github.com/user-attachments/assets/e4d3a2a6-8155-40c1-954e-baca4a0f3ad6" />
