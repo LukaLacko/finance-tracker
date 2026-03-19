@@ -19,7 +19,7 @@ class AuthMiddleware
         //is user logged in
         if(!Auth::check()){
             //user is not logged in
-            return redirect()->route("login")->with("error", "For you to access this page you must first login");
+            return redirect()->route("login")->with("error", "For you to access the app you must first login");
         }
 
         return $next($request);

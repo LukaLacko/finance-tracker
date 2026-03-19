@@ -1,6 +1,7 @@
 # Finance Tracker
 
-I built this app in a few weeks to practice Laravel. It helps users track their expenses, incomes, budgets and view financial reports
+A full-stack web application for personal finance management — track income, 
+expenses, budgets, and generate financial reports with real-time currency conversion.
 
 # Live Demo
 [Live Demo](https://expense-tracker-production-edfb.up.railway.app/)
@@ -16,7 +17,7 @@ I built this app in a few weeks to practice Laravel. It helps users track their 
 - Currency converter with live exchange rates
 - Financial reports
 - Export data to CSV
-- Authentication (login, register, forgot password)
+- Authentication (login, register, forgot password/password reset)
 
 # Tech Stack
 - Laravel

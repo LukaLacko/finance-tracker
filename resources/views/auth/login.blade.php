@@ -12,12 +12,21 @@
 }
 </style>
 
-
 <div class="signin-wrapper">
     <main class="form-signin text-center">
         <form method="post">
           @csrf
           <div class="card rounded-4 shadow-lg">
+            @if(session("error"))
+                <div class="alert alert-danger text-center">
+                    {{ session("error") }}
+                </div>
+            @endif
+            @if(session("success"))
+                <div class="alert alert-success text-center">
+                    {{ session("success") }}
+                </div>
+            @endif
             <div class="card-body">
                 <img class="" src="{{ asset('img/Expense-tracker logo.png') }}" alt="Logo" style="width: 150px; height: auto;">
                 <h1 class="h3 mb-3 fw-normal">Please sign in</h1>

@@ -41,13 +41,13 @@ class AuthController extends Controller
     
         if (!$userExists) {
             return redirect()->back()
-                ->with("error", "Korisnik sa ovim emailom ne postoji!")
+                ->with("error", "User with this email does not exist!")
                 ->withInput(); // Vraća uneti email u polje
         }
     
         // Ako korisnik postoji, znači da je samo lozinka pogrešna
         return redirect()->back()
-            ->with("error", "Pogrešna lozinka, pokušajte ponovo.")
+            ->with("error", "Wrong password! Try Again.")
             ->withInput();
     }
 
